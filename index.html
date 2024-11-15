@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Predictive & Prescriptive Analytics Dashboard</title>
+    <!-- Link to a CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <section id="overview">
+            <h1>Welcome to the Predictive Analytics Dashboard</h1>
+            <p>Gain insights into your data with advanced machine learning models and optimization algorithms.</p>
+        </section>
+
+        <!-- Data input form for users to upload or select data -->
+        <section id="data-input">
+            <h2>Upload Your Data</h2>
+            <form id="upload-form">
+                <label for="file-upload">Select a file to upload:</label>
+                <input type="file" id="file-upload" name="file-upload" accept=".csv,.json" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <!-- Predictive Analytics Section -->
+        <section id="predictive">
+            <h2>Predictive Analytics</h2>
+            <p>Select a model to predict future outcomes:</p>
+            <form id="predict-form">
+                <label for="model-select">Choose a prediction model:</label>
+                <select id="model-select" name="model-select">
+                    <option value="model1">Model 1: Time Series Forecasting</option>
+                    <option value="model2">Model 2: Classification</option>
+                    <option value="model3">Model 3: Regression</option>
+                </select>
+                <button type="submit">Run Prediction</button>
+            </form>
+        </section>
+
+        <!-- Prescriptive Analytics Section -->
+        <section id="prescriptive">
+            <h2>Prescriptive Analytics</h2>
+            <p>Optimize your strategies and make decisions with the following options:</p>
+            <form id="prescriptive-form">
+                <label for="optimization-option">Choose optimization strategy:</label>
+                <select id="optimization-option" name="optimization-option">
+                    <option value="opt1">Optimization 1: Resource Allocation</option>
+                    <option value="opt2">Optimization 2: Scheduling</option>
+                    <option value="opt3">Optimization 3: Route Planning</option>
+                </select>
+                <button type="submit">Run Optimization</button>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Analytics Results</h2>
+            <p>Here are your results:</p>
+            <div id="prediction-results">
+                <!-- Placeholder for prediction results -->
+            </div>
+            <div id="optimization-results">
+                <!-- Placeholder for optimization results -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Predictive & Prescriptive Analytics Dashboard. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JS for functionality (if needed) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
